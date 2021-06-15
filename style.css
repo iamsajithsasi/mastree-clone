@@ -1,0 +1,155 @@
+:root {
+  --mainbgcolor: #ff384f;
+  --bgSecondary: #f8f5ff;
+  --bgDarkGrey: #edd5ff;
+  --colorSec: #fffb9b;
+  --darkBlue: #201d4f;
+  --darkBlueHover: #19164b;
+  --circleImgSize: 100px;
+}
+
+.bg-color {
+  background-color: var(--mainbgcolor);
+}
+.bg-sec {
+  background-color: var(--bgSecondary);
+}
+.bg-yellow {
+  background-color: var(--colorSec);
+}
+.bgDarkGrey {
+  background-color: var(--bgDarkGrey);
+}
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.logo img {
+  max-width: 125px;
+}
+
+.font-secondary {
+  color: var(--colorSec);
+}
+
+.font-white {
+  color: #fff;
+}
+
+.regForm {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+.regForm label {
+  font-weight: bolder;
+}
+
+.bookTrialBtn {
+  background-color: var(--mainbgcolor);
+  display: block;
+  border-style: none;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 52px;
+  box-shadow: none;
+  text-shadow: none;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.cardBox .cardItem {
+  margin-top: var(--circleImgSize) !important;
+}
+.cardBox .cardItem img {
+  display: block;
+  position: relative;
+  top: calc(var(--circleImgSize) * -1);
+  width: calc(var(--circleImgSize) * 2);
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: calc(var(--circleImgSize) * -1);
+}
+
+.smallImg {
+  max-width: 125px;
+  margin: 0 auto;
+  display: block;
+}
+
+main.scrollSnap {
+  max-height: 100vh;
+  overflow-y: auto;
+  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y proximity;
+}
+
+main.scrollSnap section {
+  scroll-snap-align: start;
+}
+
+.offerCardBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offerDisBox img {
+  max-width: 65px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* footer */
+.backgroundBlue {
+  background: #201d4f;
+}
+.socialIcons {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footerLinks {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.footerLinks a {
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 5px 25px;
+  margin: 5px 0;
+  display: inline-block;
+}
+.footerLinks a:hover {
+  background-color: var(--darkBlueHover);
+  text-decoration: none;
+  color: #fff;
+}
+
+.socialIcons a img {
+  max-height: 65px;
+  min-height: 65px;
+}
+.copy_right {
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: 12px 0px;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.fullHeight {
+    min-height: 100vh;
+  }
+}
